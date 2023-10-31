@@ -1,0 +1,10 @@
+{
+    "inputFilePath": "tmp/lvgl/src/lvgl.h",
+    "userIncludeDirectories": [
+      
+      ],
+    "platforms": {
+      "aarch64-apple-darwin": {},
+      "x86_64-apple-darwin": {}
+    }
+  }
