@@ -1,0 +1,7 @@
+{
+    "inputFilePath": "./tmp/ast/aarch64-apple-darwin.json",
+    "outputFileDirectory": "./tmp/LVGLSharp",
+    "className": "LVGL",
+    "libraryName": "LVGLSharp",
+    "namespaceName": "LVGLSharp"
+  }
