@@ -10,6 +10,10 @@ if ($IsLinux) {
     Exit
 }
 
+if ($IsWindows) {
+    winget install -i LLVM.LLVM
+}
+
 if (-not(Get-Command -Name castffi -ErrorAction SilentlyContinue)) {
     dotnet tool install bottlenoselabs.castffi.tool -g
 }
