@@ -1,0 +1,7 @@
+{
+    "inputFilePath": "./tmp/ast/aarch64-pc-windows-msvc.json",
+    "outputFileDirectory": "./tmp/LVGLSharp",
+    "className": "LVGL",
+    "libraryName": "LVGLSharp",
+    "namespaceName": "LVGLSharp"
+  }

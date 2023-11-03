@@ -15,7 +15,7 @@ Run the powershell script at `generator/init.ps1` in a terminal running _Powersh
 
 ## Generating dotnet API from Headers
 
-... WIP
+Run the powershell script at `generator/bindings.ps1`. This script will also call the `init` script, and then ensure that [c2cs](https://github.com/bottlenoselabs/c2cs) is installed. It will subsequently generate the C# bindings which you can find in the `/generator/tmp/LVGLSharp` folder.
 
 ## Cleanup
 
