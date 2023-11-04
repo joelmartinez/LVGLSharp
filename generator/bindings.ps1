@@ -17,4 +17,11 @@ c2cs generate --config $c2csConfig
 
 cp ./LVGLSharp.csproj ./tmp/LVGLSharp/LVGLSharp.csproj
 
+$genPath = "./tmp/LVGLSharp/LVGL.gen.cs"
+
+# work around due to https://github.com/bottlenoselabs/c2cs/issues/155
+$r = (Get-Content -Path $genPath) -replace 'public static (_?lv_.*_t) (LV_.*) = (\d+);', 'public static $1 $2 = ($1)$3;'
+$r | Set-Content -Path $genPath
+
+
 pop-location
