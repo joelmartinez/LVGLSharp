@@ -53,7 +53,7 @@ $platform = "windows"
 if ($IsMacOS) {
     $platform = "macos"
 }
-$castffi_path = "../config-"+ $platform +".json"
+$castffi_path = "../castffi-config-"+ $platform +".json"
 castffi extract --config $castffi_path
 if (test-path -path "ast") {
     Remove-Item -Path 'ast' -Recurse -Force
