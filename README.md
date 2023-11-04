@@ -6,8 +6,8 @@ works by generating the API interface from the C headers.
 ## Dependencies
 
 - git - https://git-scm.com
-- dotnet - https://dotnet.microsoft.com/
-- Powershell - https://learn.microsoft.com/PowerShell
+- dotnet 7.x - https://dotnet.microsoft.com/
+- Powershell 7.x - https://learn.microsoft.com/PowerShell
 
 ## Initializing
 
