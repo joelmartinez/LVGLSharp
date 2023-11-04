@@ -7,10 +7,10 @@ if (-not(Get-Command -Name c2cs -ErrorAction SilentlyContinue)) {
 $scriptPath = Split-Path -Parent $MyInvocation.MyCommand.Path
 push-location $scriptPath
 
-$c2csConfig = "./config-win.json"
+$c2csConfig = "./c2cs-config-win.json"
 
 if ($IsMacOS) {
-    $c2csConfig = "./config-mac.json"
+    $c2csConfig = "./c2cs-config-mac.json"
 }
 
 c2cs generate --config $c2csConfig
