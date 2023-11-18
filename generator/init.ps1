@@ -20,6 +20,9 @@ if (-not(Get-Command -Name castffi -ErrorAction SilentlyContinue)) {
 else 
 {
     echo "✅ castffi already installed"
+    echo "⬆️ updating castffi to the latest version"
+    dotnet tool update bottlenoselabs.castffi.tool -g
+
 }
 
 if (-not(Get-Command -Name git -ErrorAction SilentlyContinue)) {
