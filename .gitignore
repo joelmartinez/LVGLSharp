@@ -5,6 +5,7 @@ test/**/*.dylib
 test/**/*.dll
 test/clib/build
 .DS_Store
+.vscode
 
 
 ## Ignore Visual Studio temporary files, build results, and

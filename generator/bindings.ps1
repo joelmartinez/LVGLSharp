@@ -22,4 +22,12 @@ c2cs generate --config $c2csConfig
 
 cp ./LVGLSharp.csproj ./tmp/LVGLSharp/LVGLSharp.csproj
 
+# compile lvgl
+push-location ./tmp/lvgl
+mkdir build
+cd build
+cmake -DBUILD_SHARED_LIBS=TRUE ..
+make
+
+pop-location
 pop-location
