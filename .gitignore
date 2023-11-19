@@ -1,6 +1,9 @@
 ## LVGLSharp Project ignores
 generator/tmp
 test/**/*.so
+test/**/*.dylib
+test/**/*.dll
+test/clib/build
 .DS_Store
 
 

@@ -1,1 +1,4 @@
-gcc -shared -o clib.so clib.c
+mkdir build
+cd build
+cmake ..
+make

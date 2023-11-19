@@ -13,7 +13,7 @@ static class NativeMethods {
     #if WINDOWS
     private const string LibraryName = "clib.dll";
     #elif LINUX || OSX
-    private const string LibraryName = "clib.so";
+    private const string LibraryName = "libclib.dylib";
     #else
     #error Unknown platform
     #endif

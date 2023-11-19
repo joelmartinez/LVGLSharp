@@ -1,3 +1,3 @@
-cp ../clib/clib.so .
+cp ../clib/build/libclib.dylib .
 dotnet build
 dotnet run
