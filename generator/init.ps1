@@ -44,7 +44,12 @@ if (-not (test-path -path $lvgl_path)) {
     cd tmp
     git clone --filter=blob:none --sparse https://github.com/lvgl/lvgl
     cd $lvgl_path
+
     git sparse-checkout add src
+    git sparse-checkout add env_support
+    # Minimum list of lvgl compilation dependencies, must match what's in the env_support/cmake/custom.cmake file
+    git sparse-checkout add examples
+    git sparse-checkout add demos
     cd ../..
 }
 else {
